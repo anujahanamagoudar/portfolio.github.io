@@ -108,4 +108,25 @@ blockquote {
     color: white;
     padding: 2rem;
     border-radius: 8px;
-    margin: 
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto; /* Centers the block */
+    position: relative; /* Ensures positioning is controlled */
+}
+
+/* Dotted Effect for Naya Raipur Block */
+.naya-raipur-block::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
+    background-size: 10px 10px;
+    z-index: -1;
