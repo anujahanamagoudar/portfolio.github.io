@@ -1,4 +1,4 @@
-/* Reset default margin and padding */
+/* Global Reset */
 * {
     margin: 0;
     padding: 0;
@@ -8,13 +8,15 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #f5f5f5;
+    background-color: #e0b3f4; /* Light Violet Background */
     margin: 0;
     padding: 20px; /* Adding padding to the body to prevent sticking at the top */
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Aligns content towards the top */
     min-height: 100vh;
+    background-image: radial-gradient(circle, #e0b3f4 20%, transparent 20%, transparent 40%, #e0b3f4 40%, #e0b3f4 60%, transparent 60%, transparent 80%, #e0b3f4 80%); /* Adding dotted background */
+    background-size: 20px 20px; /* Dot spacing */
 }
 
 /* Main Container */
@@ -38,11 +40,13 @@ header {
     margin-bottom: 1.5rem;
 }
 
+/* Header Title */
 header h1 {
     font-size: 2rem;
     margin: 0;
 }
 
+/* Header Subtitle */
 header p {
     margin: 1rem 0 0;
 }
@@ -98,13 +102,10 @@ blockquote {
     margin-top: 2rem;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    section {
-        padding: 1.5rem;
-    }
-
-    header {
-        padding: 1.5rem;
-    }
-}
+/* Naya Raipur Block */
+.naya-raipur-block {
+    background-color: #4CAF50;
+    color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 
