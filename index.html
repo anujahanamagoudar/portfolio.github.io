@@ -3,19 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>smart city design</title>
+    <title>Smart City Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: white;
+            color: #4CAF50;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+            color: white;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        .recent-posts h2 {
+            text-align: center;
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+
+        .post-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .post-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .post-card h3 {
+            color: #4CAF50;
+            margin-top: 0;
+        }
+
+        .portfolio-info dl {
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="header-content">
-            <h1>NAYA RAIPUR</h1>
-            <p>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</p>
-            <a href="#" class="btn">Home</a>
-            <a href="project introduction.html" class="btn">Project introduction</a>
-            <a href="team.html" class="btn">Business cases</a>
-        </div>
+        <h1>NAYA RAIPUR</h1>
+        <p>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</p>
+        <a href="#" class="btn">Home</a>
+        <a href="project-introduction.html" class="btn">Project Introduction</a>
+        <a href="team.html" class="btn">Business Cases</a>
     </header>
 
     <main>
@@ -24,39 +116,39 @@
             <div class="post-grid">
                 <div class="post-card">
                     <h3>What is the course about?</h3>
-                    <p>
-                        The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency.
-                        This course emphasizes:
-                        <ul>
-                            <li>The systematic design of algorithms.</li>
-                            <li>The analysis of their time and space complexities.</li>
-                            <li>The application of mathematical tools to compare algorithm performance.</li>
-                        </ul>
-                        By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.
-                    </p>
+                    <p>The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency.</p>
+                    <p>This course emphasizes:</p>
+                    <ul>
+                        <li>The systematic design of algorithms.</li>
+                        <li>The analysis of their time and space complexities.</li>
+                        <li>The application of mathematical tools to compare algorithm performance.</li>
+                    </ul>
+                    <p>By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.</p>
                 </div>
+
                 <div class="post-card">
                     <h3>What kind of data structures and algorithms have I studied?</h3>
-                    <p>
-                        During the course, I explored a variety of data structures and algorithms, including:
-                        <strong>Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables.
-                        <br><strong>Algorithms:</strong> Sorting algorithms like Merge Sort and Quick Sort, graph algorithms like Dijkstra’s and Kruskal’s, and advanced string matching algorithms like Rabin-Karp and Boyer-Moore.
-                    </p>
+                    <p>During the course, I explored a variety of data structures and algorithms, including:</p>
+                    <ul>
+                        <li>Data Structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables.</li>
+                        <li>Algorithms: Sorting algorithms like Merge Sort and Quick Sort, graph algorithms like Dijkstra’s and Kruskal’s, and advanced string matching algorithms like Rabin-Karp and Boyer-Moore.</li>
+                    </ul>
+                    <p>Each topic built upon the foundational knowledge, helping me to analyze problems from different perspectives and apply the most suitable data structure or algorithm.</p>
                 </div>
+
                 <div class="post-card">
-                    <h3>CONNECTION WITH REAL WORLD</h3>
-                    <p>
-                        The course has practical applications in a variety of fields such as software development, artificial intelligence, and data science. Understanding how to optimize algorithms is crucial when working with large datasets, building scalable systems, or creating intelligent systems.
-                    </p>
+                    <h3>Connection with Real World</h3>
+                    <p>This course equips me with the skills to solve real-world problems efficiently by applying the right algorithms and data structures. It bridges the gap between theoretical knowledge and practical applications in fields like smart city solutions, AI, and software development.</p>
                 </div>
             </div>
         </section>
 
         <section class="portfolio-info">
             <h2>Why is this course important?</h2>
-            <p>
-                This course is a stepping stone for anyone aspiring to excel in fields like software engineering, competitive programming, and machine learning. It lays the foundation for efficient problem-solving, a skill crucial in today’s fast-paced technological world.
-            </p>
+            <dl>
+                <p>This course is a stepping stone for anyone aspiring to excel in fields like software engineering, competitive programming, and machine learning. It lays the foundation for efficient problem-solving, a skill crucial in today’s fast-paced technological world.</p>
+                <p>Through this learning portfolio, I aim to demonstrate my understanding and enthusiasm for algorithms and data structures, reflecting on how they shape the software and tools we use daily.</p>
+            </dl>
         </section>
     </main>
 
