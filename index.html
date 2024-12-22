@@ -7,116 +7,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
+            margin: 0;
             font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #fdebd3; /* Light peach */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .header-bar {
-            background-color: #ffffff; /* White */
+            background-color: #fdebd0; /* Light peach background */
             color: #333;
-            width: 80%;
+        }
+        .center-bar {
+            background-color: #fff; /* White bar */
+            padding: 20px;
             text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%; /* Center bar width */
             border-radius: 10px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
-
-        .header-bar h1 {
-            margin: 0;
-            font-size: 2rem;
+        .center-bar span {
+            font-size: 24px;
+            margin: 0 5px;
         }
-
-        .header-bar p {
-            margin: 5px 0;
-            font-size: 1rem;
-        }
-
-        .cpp-icons {
-            font-size: 1.5rem;
-            margin-top: 10px;
-        }
-
         .content {
-            margin-top: 20px;
-            width: 80%;
-            text-align: left;
-            background-color: #ffffff;
             padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            color: #27ae60; /* Green color for headings */
+        }
+        .content-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
             border-radius: 10px;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .content h2 {
-            color: #333;
-            font-size: 1.5rem;
-            border-bottom: 2px solid #f0ad4e;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-        }
-
-        .content p {
-            color: #555;
-            font-size: 1rem;
-            line-height: 1.6;
-        }
-
-        .content ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .content li {
-            background-color: #f9f9f9;
-            margin: 5px 0;
-            padding: 10px;
-            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
 <body>
-    <div class="header-bar">
-        <h1>NAYA RAIPUR</h1>
+    <div class="center-bar">
+        <span>⚙️</span>
+        <span>💻</span>
+        <span>🔧</span>
+        <span>🖥️</span>
+        <span>⚙️</span>
+        <p>NAYA RAIPUR</p>
         <p>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</p>
-        <div class="cpp-icons">✨ C++ 🖥️ 💻</div>
     </div>
-
     <div class="content">
-        <h2>Course Introduction</h2>
-        <p><strong>What is the course about?</strong></p>
-        <p>
-            The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency. This course emphasizes:
-        </p>
-        <ul>
-            <li>The systematic design of algorithms.</li>
-            <li>The analysis of their time and space complexities.</li>
-            <li>The application of mathematical tools to compare algorithm performance.</li>
-        </ul>
-        <p>
-            By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.
-        </p>
-
-        <p><strong>What kind of data structures and algorithms have I studied?</strong></p>
-        <p>
-            During the course, I explored a variety of data structures and algorithms, including:
-        </p>
-        <ul>
-            <li>Data Structures: Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables.</li>
-            <li>Algorithms: Sorting algorithms like Merge Sort and Quick Sort, graph algorithms like Dijkstra’s and Kruskal’s, and advanced string matching algorithms like Rabin-Karp and Boyer-Moore.</li>
-        </ul>
-
-        <p><strong>Connection with Real World</strong></p>
-        <p>
-            The course has practical applications in a variety of fields such as software development, artificial intelligence, and data science. Understanding how algorithms function is crucial in solving real-world problems efficiently.
-        </p>
+        <div class="content-section">
+            <h1>COURSE INTRODUCTION</h1>
+            <p>
+                The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency.
+            </p>
+            <ul>
+                <li>The systematic design of algorithms.</li>
+                <li>The analysis of their time and space complexities.</li>
+                <li>The application of mathematical tools to compare algorithm performance.</li>
+            </ul>
+            <p>
+                By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.
+            </p>
+        </div>
     </div>
 </body>
 </html>
