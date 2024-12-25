@@ -12,7 +12,30 @@
             background-color: #dfffd6; /* Light green background */
             color: #333;
         }
-        /* Personal Information Section */
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #27ae60; /* Green background */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        .section {
+            display: none; /* Hide all sections by default */
+            padding: 20px;
+        }
+
         .personal-info {
             background-color: #fff;
             padding: 20px;
@@ -38,27 +61,8 @@
             font-weight: bold;
         }
 
-        /* Navigation Bar Styles */
-        nav {
-            background-color: #27ae60; /* Green background */
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            font-size: 18px;
-            margin: 0 15px;
-            text-decoration: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #2ecc71; /* Lighter green on hover */
-        }
-
         .center-bar {
-            background-color: #fff; /* White bar */
+            background-color: #fff;
             padding: 20px;
             text-align: center;
             margin: 20px auto;
@@ -68,7 +72,7 @@
         }
         .center-bar h1 {
             font-size: 28px;
-            color: #27ae60; /* Green color */
+            color: #27ae60;
             margin: 0;
         }
         .center-bar h2 {
@@ -76,95 +80,52 @@
             color: #27ae60;
             margin: 5px 0 0;
         }
-        .content {
-            padding: 20px;
-        }
-        .content-section {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .content-section h1 {
-            font-size: 28px;
-            color: #27ae60;
-            margin-bottom: 10px;
-        }
-        .content-section h2 {
-            font-size: 22px;
-            color: #27ae60;
-            margin-top: 0;
-        }
-        .content-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .content-box {
-            flex: 1 1 45%;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-        }
-        .content-box h2 {
-            font-size: 22px;
-            color: #27ae60;
-            margin-bottom: 10px;
-        }
-        .content-box p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-        }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="#my portfolio">Home</a>
-    </nav>
-    <!-- Personal Information Section -->
-    <div class="personal-info">
-        <h1>Anuja Hanamagoudar</h1>
-        <p>Welcome to my portfolio! I am passionate about technology and problem-solving.</p>
-        
-        <h2>🛠️ Projects</h2>
-        <p><strong>Project 1:</strong> Smart City Rajpur is an ambitious urban development project aimed at transforming Rajpur into a modern, sustainable, and technology-driven city. The initiative focuses on improving infrastructure, including smart traffic management, efficient waste disposal systems, and reliable public transportation. With the integration of IoT (Internet of Things) technology, the city seeks to enhance the quality of life for its residents by providing better healthcare, education, and safety services. Renewable energy solutions, green spaces, and eco-friendly practices are central to the vision, ensuring that Rajpur becomes an environmentally sustainable and future-ready urban space.</p>
-        
-        <h2>🚀 Skills</h2>
-        <p>C, C++ <br> Data Structures and Algorithms</p>
-        
-        <h2>🌐 Find Me Online</h2>
-        <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-
-        <h2>Portfolio Topic</h2>
-        <p><strong>Course Name:</strong> Algorithmic Problem Solving <br> <strong>Course Code:</strong> 24ECSC205</p>
-        
-        <h2>Instructor & University</h2>
-        <p><strong>Instructor:</strong> Arundhati Aralimatti <br> <strong>University:</strong> KLE Technological University, Hubballi</p>
-        
-        <h2>Portfolio Topic/Domain</h2>
-        <p>Google</p>
-        
-        <h2>Inspirational Quote</h2>
-        <p>“The only way to do great work is to love what you do.” – Steve Jobs</p>
-    </div>
-
     <!-- Navigation Bar -->
     <nav>
-        <a href="#home">Home</a>
+        <a href="javascript:void(0)" onclick="showSection('portfolio')">My Portfolio</a>
+        <a href="javascript:void(0)" onclick="showSection('home')">Home</a>
     </nav>
 
-    <!-- Rest of your portfolio content -->
-    <div class="center-bar" id="home">
-        <h1>NAYA RAIPUR</h1>
-        <h2>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</h2>
+    <!-- My Portfolio Section -->
+    <div id="portfolio" class="section">
+        <div class="personal-info">
+            <h1>Anuja Hanamagoudar</h1>
+            <p>Welcome to my portfolio! I am passionate about technology and problem-solving.</p>
+
+            <h2>🛠️ Projects</h2>
+            <p><strong>Project 1:</strong> Smart City Rajpur is an ambitious urban development project aimed at transforming Rajpur into a modern, sustainable, and technology-driven city. The initiative focuses on improving infrastructure, including smart traffic management, efficient waste disposal systems, and reliable public transportation. With the integration of IoT (Internet of Things) technology, the city seeks to enhance the quality of life for its residents by providing better healthcare, education, and safety services. Renewable energy solutions, green spaces, and eco-friendly practices are central to the vision, ensuring that Rajpur becomes an environmentally sustainable and future-ready urban space.</p>
+
+            <h2>🚀 Skills</h2>
+            <p>C, C++ <br> Data Structures and Algorithms</p>
+
+            <h2>🌐 Find Me Online</h2>
+            <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+
+            <h2>Portfolio Topic</h2>
+            <p><strong>Course Name:</strong> Algorithmic Problem Solving <br> <strong>Course Code:</strong> 24ECSC205</p>
+
+            <h2>Instructor & University</h2>
+            <p><strong>Instructor:</strong> Arundhati Aralimatti <br> <strong>University:</strong> KLE Technological University, Hubballi</p>
+
+            <h2>Portfolio Topic/Domain</h2>
+            <p>Google</p>
+
+            <h2>Inspirational Quote</h2>
+            <p>“The only way to do great work is to love what you do.” – Steve Jobs</p>
+        </div>
     </div>
 
-    <div class="content">
+    <!-- Home Section -->
+    <div id="home" class="section">
+        <div class="center-bar">
+            <h1>NAYA RAIPUR</h1>
+            <h2>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</h2>
+        </div>
+
+        <!-- Course Introduction Section -->
         <div class="content-section" id="course-introduction">
             <h1>COURSE INTRODUCTION</h1>
             <h2>What is the course about?</h2>
@@ -189,6 +150,7 @@
             </div>
         </div>
 
+        <!-- Real-World Connection Section -->
         <div class="content-section" id="real-world-connection">
             <h1>CONNECTION WITH REAL WORLD</h1>
             <h2>What kind of data structures and algorithms have I studied?</h2>
@@ -206,6 +168,7 @@
             </p>
         </div>
 
+        <!-- Importance Section -->
         <div class="content-section" id="importance">
             <h1>Why is this course important?</h1>
             <p>
@@ -213,5 +176,22 @@
             </p>
         </div>
     </div>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.style.display = 'none');
+
+            // Show the selected section
+            const selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+
+        // By default, show the home section
+        window.onload = function() {
+            showSection('home');
+        };
+    </script>
 </body>
 </html>
