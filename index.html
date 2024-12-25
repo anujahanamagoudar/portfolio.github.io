@@ -3,19 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Smart City Design</title>
+    <title>Navigation Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            margin: 0;
             font-family: 'Poppins', sans-serif;
-            background-color: #dfffd6; /* Light green background */
-            color: #333;
-            scroll-behavior: smooth; /* Enables smooth scrolling */
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
         }
-        /* Navigation Bar Styles */
         nav {
-            background-color: #27ae60; /* Green background */
+            background-color: #27ae60;
             padding: 10px 20px;
             text-align: center;
         }
@@ -29,169 +27,23 @@
             transition: background-color 0.3s;
         }
         nav a:hover {
-            background-color: #2ecc71; /* Lighter green on hover */
-        }
-
-        /* Personal Information Section */
-        .personal-info {
-            background-color: #fff;
-            padding: 20px;
-            text-align: center;
-            margin: 20px auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
-            border-radius: 10px;
-        }
-        .personal-info h1 {
-            color: #27ae60;
-            font-size: 28px;
-            margin: 0;
-        }
-        .personal-info p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
-        }
-        .personal-info a {
-            color: #27ae60;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        /* Center Bar and Content Section Styles */
-        .center-bar {
-            background-color: #fff; /* White bar */
-            padding: 20px;
-            text-align: center;
-            margin: 20px auto;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 80%;
-            border-radius: 10px;
-        }
-        .center-bar h1 {
-            font-size: 28px;
-            color: #27ae60;
-            margin: 0;
-        }
-        .center-bar h2 {
-            font-size: 22px;
-            color: #27ae60;
-            margin: 5px 0 0;
+            background-color: #2ecc71;
         }
         .content {
             padding: 20px;
-        }
-        .content-section {
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .content-section h1 {
-            font-size: 28px;
-            color: #27ae60;
-            margin-bottom: 10px;
-        }
-        .content-section h2 {
-            font-size: 22px;
-            color: #27ae60;
-            margin-top: 0;
-        }
-        .content-row {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-        .content-box {
-            flex: 1 1 45%;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            max-width: 500px;
-        }
-        .content-box h2 {
-            font-size: 22px;
-            color: #27ae60;
-            margin-bottom: 10px;
-        }
-        .content-box p {
-            font-size: 16px;
-            color: #333;
-            line-height: 1.6;
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
-        <a href="#my-portfolio">My Portfolio</a>
-        <a href="#home">Home</a>
+        <a href="home.html">Home</a>
+        <a href="portfolio.html">My Portfolio</a>
     </nav>
 
-    <!-- Personal Information Section -->
-    <div id="my-portfolio" class="personal-info">
-        <h1>Anuja Hanamagoudar</h1>
-        <p>Welcome to my portfolio! I am passionate about technology and problem-solving.</p>
-
-        <h2>🛠️ Projects</h2>
-        <p><strong>Project 1:</strong> Smart City Rajpur is an ambitious urban development project aimed at transforming Rajpur into a modern, sustainable, and technology-driven city. The initiative focuses on improving infrastructure, including smart traffic management, efficient waste disposal systems, and reliable public transportation. With the integration of IoT (Internet of Things) technology, the city seeks to enhance the quality of life for its residents by providing better healthcare, education, and safety services. Renewable energy solutions, green spaces, and eco-friendly practices are central to the vision, ensuring that Rajpur becomes an environmentally sustainable and future-ready urban space.</p>
-
-        <h2>🚀 Skills</h2>
-        <p>C, C++ <br> Data Structures and Algorithms</p>
-
-        <h2>🌐 Find Me Online</h2>
-        <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-
-        <h2>Portfolio Topic</h2>
-        <p><strong>Course Name:</strong> Algorithmic Problem Solving <br> <strong>Course Code:</strong> 24ECSC205</p>
-
-        <h2>Instructor & University</h2>
-        <p><strong>Instructor:</strong> Arundhati Aralimatti <br> <strong>University:</strong> KLE Technological University, Hubballi</p>
-
-        <h2>Portfolio Topic/Domain</h2>
-        <p>Google</p>
-
-        <h2>Inspirational Quote</h2>
-        <p>“The only way to do great work is to love what you do.” – Steve Jobs</p>
-    </div>
-
-    <!-- Home Section -->
-    <div id="home" class="center-bar">
-        <h1>RAJPUR</h1>
-        <h2>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</h2>
-    </div>
-
     <div class="content">
-        <div class="content-section" id="course-introduction">
-            <h1>COURSE INTRODUCTION</h1>
-            <h2>What is the course about?</h2>
-            <p>The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency.</p>
-            <div class="content-row">
-                <div class="content-box">
-                    <h2>What is the course about?</h2>
-                    <p>The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency. This course emphasizes:</p>
-                    <p>- The systematic design of algorithms.<br>- The analysis of their time and space complexities.<br>- The application of mathematical tools to compare algorithm performance.</p>
-                    <p>By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="content-section" id="real-world-connection">
-            <h1>CONNECTION WITH REAL WORLD</h1>
-            <h2>What kind of data structures and algorithms have I studied?</h2>
-            <p>During the course, I explored a variety of data structures and algorithms, including:</p>
-            <p><strong>Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables.</p>
-            <p><strong>Algorithms:</strong> Sorting algorithms like Merge Sort and Quick Sort, graph algorithms like Dijkstra’s and Kruskal’s, and advanced string matching algorithms like Rabin-Karp and Boyer-Moore.</p>
-            <p>Each topic built upon the foundational knowledge, helping me to analyze problems from different perspectives and apply the most suitable data structure or algorithm.</p>
-        </div>
-
-        <div class="content-section" id="importance">
-            <h1>Why is this course important?</h1>
-            <p>This course is a stepping stone for anyone aspiring to excel in fields like software engineering, competitive programming, and machine learning. It lays the foundation for efficient problem-solving, a skill crucial in today’s fast-paced technological world. Through this learning portfolio, I aim to demonstrate my understanding and enthusiasm for algorithms and data structures, reflecting on how they shape the software and tools we use daily.</p>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Click on the links above to navigate to different sections.</p>
     </div>
 </body>
 </html>
