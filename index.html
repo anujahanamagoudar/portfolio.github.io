@@ -3,86 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anuja's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Smart City Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #dfffd6; /* Light green background */
+            color: #333;
+        }
+        .center-bar {
+            background-color: #fff; /* White bar */
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .center-bar h1 {
+            font-size: 28px;
+            color: #27ae60; /* Green color */
+            margin: 0;
+        }
+        .center-bar h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin: 5px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h1 {
+            font-size: 28px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .content-section h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin-top: 0;
+        }
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .content-box {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .content-box h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .content-box p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Hello</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Find Me Online</a></li>
-                <li><a href="#course">Course Details</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about" class="section-container">
-        <div class="content-container">
-            <h1>Hello, I'm Anuja</h1>
-            <p>I am passionate about technology and problem-solving. Here's a glimpse of my work:</p>
+    <div class="center-bar">
+        <h1>NAYA RAIPUR</h1>
+        <h2>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</h2>
+    </div>
+    <div class="content">
+        <div class="content-section">
+            <h1>COURSE INTRODUCTION</h1>
+            <h2>What is the course about?</h2>
+            <p>
+                The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency.
+            </p>
+            <div class="content-row">
+                <div class="content-box">
+                    <h2>What is the course about?</h2>
+                    <p>
+                        The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency. This course emphasizes:
+                    </p>
+                    <p>
+                        - The systematic design of algorithms.<br>
+                        - The analysis of their time and space complexities.<br>
+                        - The application of mathematical tools to compare algorithm performance.
+                    </p>
+                    <p>
+                        By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.
+                    </p>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section id="projects" class="section-container">
-        <div class="content-container">
-            <h2>Projects</h2>
-            <p>{DESCRIPTION}</p>
+        <div class="content-section">
+            <h1>CONNECTION WITH REAL WORLD</h1>
+            <h2>What kind of data structures and algorithms have I studied?</h2>
+            <p>
+                During the course, I explored a variety of data structures and algorithms, including:
+            </p>
+            <p>
+                <strong>Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables.
+            </p>
+            <p>
+                <strong>Algorithms:</strong> Sorting algorithms like Merge Sort and Quick Sort, graph algorithms like Dijkstra’s and Kruskal’s, and advanced string matching algorithms like Rabin-Karp and Boyer-Moore.
+            </p>
+            <p>
+                Each topic built upon the foundational knowledge, helping me to analyze problems from different perspectives and apply the most suitable data structure or algorithm.
+            </p>
         </div>
-    </section>
-
-    <section id="skills" class="section-container">
-        <div class="content-container">
-            <h2>Skills</h2>
-            <ul>
-                <li>C Programming</li>
-                <li>Data Structures and Algorithms</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact" class="section-container">
-        <div class="content-container">
-            <h2>Find Me Online</h2>
-            <a href="https://github.com/yourgithublink" target="_blank">My GitHub Profile</a>
-        </div>
-    </section>
-
-    <section id="course" class="section-container">
-        <div class="content-container">
-            <h2>Course Introduction</h2>
-            <p><strong>Course Name:</strong> Design Analysis and Algorithms (DAA)</p>
-            <p><strong>Course Code:</strong> 24ECSC205</p>
-            <p><strong>Instructor:</strong> Arundhati Mam</p>
-            <p><strong>University:</strong> KLE Technological University</p>
-            <p>This course focuses on the design and analysis of algorithms to solve real-world problems efficiently. We explore different data structures and algorithmic techniques such as sorting, searching, dynamic programming, recursion, backtracking, and graph algorithms. These concepts are fundamental in optimizing real-time applications in various fields, including computer systems, web development, and data analytics.</p>
-            <p>The course has equipped us with the tools to approach complex problems systematically, considering factors like time and space complexity, as well as understanding when and how to apply specific techniques for maximum efficiency.</p>
-        </div>
-    </section>
-
-    <section id="course-project" class="section-container">
-        <div class="content-container">
-            <h2>Course Project</h2>
-            <p><strong>Problem Space:</strong> The project involves applying data structures and algorithms to optimize city designs. We focused on designing algorithms to address key challenges in urban planning, transportation, and business operations.</p>
-            <p><strong>Team Members:</strong> The team consists of diverse members, each focusing on a specific business case such as traffic optimization, waste management, and resource allocation using advanced algorithms like graph traversal, dynamic programming, and greedy algorithms.</p>
-            <p><strong>Business Cases:</strong> The business cases include optimizing city traffic flow using graph-based algorithms, improving waste collection using dynamic programming, and designing smart resource management systems through greedy algorithms.</p>
-        </div>
-    </section>
-
-    <section id="learning-reflections" class="section-container">
-        <div class="content-container">
-            <h2>Course Learning Reflections</h2>
-            <h3>Key Takeaways</h3>
-            <p><strong>Efficiency in Algorithms:</strong> Throughout the course, we have learned the importance of both space and time efficiency. The various classes of problems such as NP-hard, NP-complete, and polynomial time problems require different strategies for optimization.</p>
-            <p><strong>Design Principles:</strong> The principles of design, such as breaking down problems into smaller subproblems and optimizing for the best case scenario, have helped us create efficient solutions for real-world applications.</p>
-            <p><strong>Application of Data Structures:</strong> The course gave us insights into different tree data structures, including AVL trees and red-black trees, and their applications in balancing and optimizing searches in databases.</p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2024 Anuja H | Portfolio</p>
-    </footer>
+    </div>
 </body>
 </html>
