@@ -12,6 +12,25 @@
             background-color: #dfffd6; /* Light green background */
             color: #333;
         }
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #27ae60; /* Green background */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
         .center-bar {
             background-color: #fff; /* White bar */
             padding: 20px;
@@ -78,12 +97,21 @@
     </style>
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#course-introduction">Course Introduction</a>
+        <a href="#real-world-connection">Real World Connection</a>
+        <a href="#importance">Why is this course important?</a>
+    </nav>
+    
     <div class="center-bar">
         <h1>NAYA RAIPUR</h1>
         <h2>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</h2>
     </div>
+
     <div class="content">
-        <div class="content-section">
+        <div class="content-section" id="course-introduction">
             <h1>COURSE INTRODUCTION</h1>
             <h2>What is the course about?</h2>
             <p>
@@ -106,7 +134,8 @@
                 </div>
             </div>
         </div>
-        <div class="content-section">
+
+        <div class="content-section" id="real-world-connection">
             <h1>CONNECTION WITH REAL WORLD</h1>
             <h2>What kind of data structures and algorithms have I studied?</h2>
             <p>
@@ -120,6 +149,13 @@
             </p>
             <p>
                 Each topic built upon the foundational knowledge, helping me to analyze problems from different perspectives and apply the most suitable data structure or algorithm.
+            </p>
+        </div>
+
+        <div class="content-section" id="importance">
+            <h1>Why is this course important?</h1>
+            <p>
+                This course is a stepping stone for anyone aspiring to excel in fields like software engineering, competitive programming, and machine learning. It lays the foundation for efficient problem-solving, a skill crucial in today’s fast-paced technological world. Through this learning portfolio, I aim to demonstrate my understanding and enthusiasm for algorithms and data structures, reflecting on how they shape the software and tools we use daily.
             </p>
         </div>
     </div>
