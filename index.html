@@ -3,33 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Anuja Hanamagoudar</title>
+    <title>Navigation Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #27ae60;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2ecc71;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a>
+        <a href="home.html">Home</a>
         <a href="portfolio.html">My Portfolio</a>
-        <a href="rajpur.html">Rajpur</a>
     </nav>
 
-    <!-- Home Page Content -->
     <div class="content">
-        <div class="personal-info">
-            <h1>Anuja Hanamagoudar</h1>
-            <p>Welcome to my portfolio! I am passionate about technology and problem-solving.</p>
-
-            <h2>🛠️ Projects</h2>
-            <p>Smart City Rajpur is an ambitious urban development project aimed at transforming Rajpur into a modern, sustainable, and technology-driven city...</p>
-
-            <h2>🚀 Skills</h2>
-            <p>C, C++ <br> Data Structures and Algorithms</p>
-
-            <h2>🌐 Find Me Online</h2>
-            <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
-        </div>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Click on the links above to navigate to different sections.</p>
     </div>
 </body>
 </html>
