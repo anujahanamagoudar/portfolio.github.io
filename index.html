@@ -3,20 +3,353 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Smart City Design</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #dfffd6; /* Light green background */
+            color: #333;
+        }
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #27ae60; /* Green background */
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        /* Personal Information Section */
+        .personal-info {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .personal-info h1 {
+            color: #27ae60;
+            font-size: 28px;
+            margin: 0;
+        }
+        .personal-info p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .personal-info a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Center Bar and Content Section Styles */
+        .center-bar {
+            background-color: #fff; /* White bar */
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .center-bar h1 {
+            font-size: 28px;
+            color: #27ae60;
+            margin: 0;
+        }
+        .center-bar h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin: 5px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h1 {
+            font-size: 28px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .content-section h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin-top: 0;
+        }
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .content-box {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .content-box h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .content-box p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+    </style>
 </head>
 <body>
-    <!-- Home Page Navigation -->
+    <!-- Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="course-project.html">Course Project</a>
+        <a href="#my-portfolio">My Portfolio</a>
+        <a href="#home">Home</a>
+        <a href="#course-project">Course Project Introduction</a>
+        <a href="#business-cases">Business Cases</a> <!-- New navigation item -->
     </nav>
-    <div>
-        <h1>Welcome to the Home Page</h1>
+
+    <!-- Personal Information Section -->
+    <div id="my-portfolio" class="personal-info">
+        <h1>Anuja Hanamagoudar</h1>
+        <p>Welcome to my portfolio! I am passionate about technology and problem-solving.</p>
+
+        <h2>🛠 Projects</h2>
+        <p><strong>Project 1:</strong> Smart City Rajpur is an ambitious urban development project aimed at transforming Rajpur into a modern, sustainable, and technology-driven city. The initiative focuses on improving infrastructure, including smart traffic management, efficient waste disposal systems, and reliable public transportation. With the integration of IoT (Internet of Things) technology, the city seeks to enhance the quality of life for its residents by providing better healthcare, education, and safety services. Renewable energy solutions, green spaces, and eco-friendly practices are central to the vision, ensuring that Rajpur becomes an environmentally sustainable and future-ready urban space.</p>
+
+        <h2>🚀 Skills</h2>
+        <p>C, C++ <br> Data Structures and Algorithms</p>
+
+        <h2>🌐 Find Me Online</h2>
+        <p><a href="https://github.com/yourusername" target="_blank">GitHub</a></p>
+
+        <h2>Portfolio Topic</h2>
+        <p><strong>Course Name:</strong> Algorithmic Problem Solving <br> <strong>Course Code:</strong> 24ECSC205</p>
+
+        <h2>Instructor & University</h2>
+        <p><strong>Instructor:</strong> Arundhati Aralimatti <br> <strong>University:</strong> KLE Technological University, Hubballi</p>
+
+        <h2>Portfolio Topic/Domain</h2>
+        <p>Google</p>
+
+        <h2>Inspirational Quote</h2>
+        <p>“The only way to do great work is to love what you do.” – Steve Jobs</p>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="center-bar">
+        <h1>RAJPUR</h1>
+        <h2>WELCOME TO OUR TEAM PORTFOLIO ON SMART CITY PROJECT</h2>
+    </div>
+
+    <div class="content">
+        <div class="content-section" id="course-introduction">
+            <h1>COURSE INTRODUCTION</h1>
+            <h2>What is the course about?</h2>
+            <p>The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency.</p>
+            <div class="content-row">
+                <div class="content-box">
+                    <h2>What is the course about?</h2>
+                    <p>The Design and Analysis of Algorithms course is all about developing a deep understanding of how algorithms work, how they are designed, and how they can be optimized for efficiency. This course emphasizes:</p>
+                    <p>- The systematic design of algorithms.<br>- The analysis of their time and space complexities.<br>- The application of mathematical tools to compare algorithm performance.</p>
+                    <p>By studying this, I have gained the skills to approach problems systematically, design solutions, and measure their efficiency.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="real-world-connection">
+            <h1>CONNECTION WITH REAL WORLD</h1>
+            <h2>What kind of data structures and algorithms have I studied?</h2>
+            <p>During the course, I explored a variety of data structures and algorithms, including:</p>
+            <p><strong>Data Structures:</strong> Arrays, Linked Lists, Stacks, Queues, Trees, Graphs, Hash Tables.</p>
+            <p><strong>Algorithms:</strong> Sorting algorithms like Merge Sort and Quick Sort, graph algorithms like Dijkstra’s and Kruskal’s, and advanced string matching algorithms like Rabin-Karp and Boyer-Moore.</p>
+            <p>Each topic built upon the foundational knowledge, helping me to analyze problems from different perspectives and apply the most suitable data structure or algorithm.</p>
+        </div>
+
+        <div class="content-section" id="importance">
+            <h1>Why is this course important?</h1>
+            <p>This course is a stepping stone for anyone aspiring to excel in fields like software engineering, competitive programming, and machine learning. It lays the foundation for efficient problem-solving, a skill crucial in today’s fast-paced technological world. Through this learning portfolio, I aim to demonstrate my understanding and enthusiasm for algorithms and data structures, reflecting on how they shape the software and tools we use daily.</p>
+        </div>
+
+        <!-- Course Project Introduction -->
+        <div id="course-project" class="content-section">
+            <h1>COURSE PROJECT INTRODUCTION</h1>
+            <h2>Problem Space:</h2>
+            <p>Cities are growing fast. This causes problems like crowded roads, more pollution, and not enough basic resources like water and power. We need better ways to handle these issues to make cities better for people.</p>
+
+            <h2>White Paper Findings:</h2>
+            <p><strong>Simple Tech Ideas:</strong> Street lights that save energy, apps to guide traffic, and sensors to track water use.</p>
+            <p><strong>Successful Cities:</strong> Cities like Copenhagen use bikes and solar panels to save energy and reduce pollution.</p>
+            <p><strong>Problems:</strong> It costs a lot to add new systems, and some people don’t trust or know how to use the technology.</p>
+
+            <h2>City Design:</h2>
+            <p>- Fix old roads, water pipes, and buildings.<br>- Add simple tools like traffic cameras and air quality sensors.<br>- Test ideas in small neighborhoods first.<br>- Make sure everyone can use the technology easily.<br>- Provide quality education.</p>
+
+            <h2>Problem Definition:</h2>
+            <p>To develop a centralized system to streamline the management of university processes.</p>
+
+            <h2>Team Details:</h2>
+            <ul>
+                <li><strong>Anuja H</strong> - 442</li>
+                <li><strong>Rashmi K</strong> - 458</li>
+                <li><strong>Lata R</strong> - 459</li>
+                <li><strong>Manasi D</strong> - 453</li>
+            </ul>
+
+            <h2>Business Cases Identified:</h2>
+            <ul>
+                <li><strong>Student Admission Management:</strong> Anuja H</li>
+                <li><strong>Course Scheduling:</strong> Rashmi K</li>
+                <li><strong>Faculty Recruitment and Management:</strong> Lata R</li>
+                <li><strong>Students Performance Tracking:</strong> Manasi D</li>
+                <li><strong>Parking Management:</strong> Rashmi K & Lata R</li>
+                <li><strong>Feedback and Quality Assurance:</strong> Anuja H & Manasi D</li>
+            </ul>
+        </div>
+
+        <!-- Business Cases Section -->
+        <div id="business-cases" class="content-section">
+        <h1>Business Cases</h1>
+        
+        <section>
+            <h2>Problem Definition</h2>
+            <p>To develop a centralized system to streamline the management of university processes.</p>
+        </section>
+
+        <section>
+            <h2>Student Admission Management</h2>
+            <p>The Student Admission Management System supports SDG 4 by ensuring inclusive and equitable access to quality education.</p>
+            <p><strong>Target 4.7:</strong> Ensure learners acquire the knowledge and skills needed to promote sustainable development by 2030.</p>
+            <p><strong>Indicator 4.7.1:</strong> Extent to which global citizenship education and education for sustainable development are mainstreamed in national policies and curricula.</p>
+            <p><strong>Target 4.4:</strong> Increase the number of youth and adults with relevant skills for employment, decent jobs, and entrepreneurship by 2030.</p>
+            <p><strong>Indicator 4.4.1:</strong> Proportion of youth and adults with ICT skills, by type of skill.</p>
+        </section>
+
+        <section>
+            <h3>Reflections</h3>
+            <h4>1. What are the kinds of problems we see in nature? (Iteration, Recursion, Backtracking)</h4>
+            <p><strong>Iteration</strong></p>
+            <ul>
+                <li>Traveling to college every day (repeated routine)</li>
+                <li>Playing the game of chess (turn-based sequences)</li>
+                <li>Preparing for an assembly (step-by-step organization)</li>
+                <li>The process of learning (daily practice and effort)</li>
+                <li>Resource management at a wedding (iterative allocation of resources)</li>
+            </ul>
+            
+            <p><strong>Recursion</strong></p>
+            <ul>
+                <li>The tree that has been growing every day (branches resembling the whole tree structure)</li>
+                <li>The growth of cauliflower vegetables (fractal patterns)</li>
+                <li>Matryoshka dolls (nested structure with self-similarity)</li>
+                <li>A calendar (days, weeks, and months recur in predictable patterns)</li>
+            </ul>
+            
+            <p><strong>Backtracking</strong></p>
+            <ul>
+                <li>Searching for a new friend’s location (exploring different paths or strategies)</li>
+                <li>Solving Sudoku (backtracking to correct mistakes)</li>
+                <li>The placement of objects (optimizing arrangements by trying alternatives)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h4>2. What is space and time efficiency? Why are they important?</h4>
+            <p>Algorithm efficiency and complexity are crucial to ensure that programs run optimally, balancing time (execution speed) and space (memory usage).</p>
+        </section>
+
+        <section>
+            <h4>3. Takeaway from different design principles from Chapter 2</h4>
+            <p><strong>Decomposition:</strong> Break complex problems into smaller, manageable pieces.</p>
+            <p><strong>Pattern Recognition:</strong> Identify recurring patterns in problems.</p>
+            <p><strong>Abstraction:</strong> Focus on essential features and ignore unnecessary details.</p>
+            <p><strong>Lazy Propagation:</strong> Delay updates in data structures for efficiency.</p>
+        </section>
+
+        <section>
+    <h4>4. Hierarchical data and how different tree data structures solve and optimize problems</h4>
+    <table class="reflection-table">
+        <thead>
+            <tr>
+                <th>Tree Type</th>
+                <th>Best For</th>
+                <th>Strength</th>
+                <th>Limitation</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BST</td>
+                <td>Sorted data with moderate updates</td>
+                <td>Simple structure</td>
+                <td>Can become unbalanced</td>
+            </tr>
+            <tr>
+                <td>AVL Tree</td>
+                <td>Frequent lookups and moderate insertions/deletions</td>
+                <td>Guarantees balance</td>
+                <td>Costly rotations</td>
+            </tr>
+            <tr>
+                <td>Heap</td>
+                <td>Priority-based operations</td>
+                <td>Efficient min/max retrieval</td>
+                <td>Not suited for general searching</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+
+        <section>
+            <h4>5. Need for array query algorithms</h4>
+            <p>Array query algorithms like Binary Search, Sliding Window, and Segment Trees optimize information retrieval and data processing.</p>
+        </section>
+
+        <section>
+            <h4>6. Trees and graphs and their traversals</h4>
+            <p><strong>Tree Traversals:</strong> In-Order, Pre-Order, Post-Order, Level-Order.</p>
+            <p><strong>Graph Traversals:</strong> DFS, BFS.</p>
+        </section>
+
+        <section>
+            <h4>7. Sorting and searching algorithms</h4>
+            <p><strong>Sorting Algorithms:</strong> Bubble Sort, Quick Sort, Merge Sort, Heap Sort.</p>
+            <p><strong>Searching Algorithms:</strong> Linear Search, Binary Search, DFS, BFS.</p>
+        </section>
+
+        <section>
+            <h4>8. Importance of graph algorithms with respect to spanning trees and shortest paths</h4>
+            <p>Graph algorithms such as Dijkstra's and Prim’s help find optimal paths and spanning trees in networks.</p>
+        </section>
+
+        <section>
+            <h4>9. Discuss the different studied algorithm design techniques</h4>
+            <p>Techniques like Brute Force, Divide and Conquer, and Greedy algorithms provide strategies for solving computational problems.</p>
+        </section>
     </div>
 </body>
 </html>
-
