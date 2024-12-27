@@ -378,11 +378,10 @@
 
             <p><strong>Shortest Path Trees:</strong> Show shortest routes from a starting node, useful for navigation and network optimization.</p>
         </section>
-
-        <section>
+            
     <section>
     <h4>4. Hierarchical data and how different tree data structures solve and optimize problems</h4>
-    <table border="1">
+    <table class="reflection-table">
         <thead>
             <tr>
                 <th>Tree Type</th>
@@ -399,10 +398,22 @@
                 <td>Can become unbalanced</td>
             </tr>
             <tr>
-                <td>AVL Tree (Adelson-Velsky and Landis Tree)</td>
+                <td>AVL Tree</td>
                 <td>Frequent lookups and moderate insertions/deletions</td>
                 <td>Guarantees balance</td>
                 <td>Costly rotations</td>
+            </tr>
+            <tr>
+                <td>2-3 Tree</td>
+                <td>Predictable performance in all operations</td>
+                <td>Consistent height</td>
+                <td>Complexity of implementation</td>
+            </tr>
+            <tr>
+                <td>Red-Black Tree</td>
+                <td>Dynamic datasets with frequent updates</td>
+                <td>Fewer rotations than AVL</td>
+                <td>Slightly less balanced than AVL</td>
             </tr>
             <tr>
                 <td>Heap</td>
@@ -410,9 +421,16 @@
                 <td>Efficient min/max retrieval</td>
                 <td>Not suited for general searching</td>
             </tr>
+            <tr>
+                <td>Trie</td>
+                <td>String data and prefix-based operations</td>
+                <td>Fast prefix search</td>
+                <td>High memory usage for sparse data</td>
+            </tr>
         </tbody>
     </table>
 </section>
+
 
         <section>
             <h4>5. The need of array query algorithms and their implications</h4>
