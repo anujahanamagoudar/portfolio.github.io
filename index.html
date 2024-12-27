@@ -277,29 +277,58 @@
         </section>
 
         <section>
-            <h2>2. What is Space and Time Efficiency? Why Are They Important?</h2>
-            <h3>Algorithm Efficiency and Complexity</h3>
-            <p><strong>Time Efficiency:</strong> Measures the computational time required to execute an algorithm and represents the number of basic operations performed by an algorithm.</p>
-            <p><strong>Space Efficiency:</strong> Measures the memory (storage) required by an algorithm, tracking how much memory is consumed by the input size and determining how much additional memory is needed to solve a problem.</p>
+    <h2>2. What is Space and Time Efficiency? Why Are They Important?</h2>
+    <h3>Algorithm Efficiency and Complexity</h3>
+    <p><strong>Time Efficiency:</strong> Measures the computational time required to execute an algorithm and represents the number of basic operations performed by an algorithm.</p>
+    <p><strong>Space Efficiency:</strong> Measures the memory (storage) required by an algorithm, tracking how much memory is consumed by the input size and determining how much additional memory is needed to solve a problem.</p>
 
-            <h4>Key Principles:</h4>
-            <ul>
-                <li>A good algorithm executes quickly and saves space in the process.</li>
-                <li>We should find a balance between space and time efficiency (space and time complexity).</li>
-            </ul>
+    <h4>Key Principles:</h4>
+    <ul>
+        <li>A good algorithm executes quickly and saves space in the process.</li>
+        <li>We should find a balance between space and time efficiency (space and time complexity).</li>
+    </ul>
 
-            <p>In the world of computer science, to perform better, we need to write algorithms that are time-efficient and use less memory. Algorithms should be resource-optimized, solving larger problems with limited computing power, and improving user experience and system performance.</p>
+    <p>In the world of computer science, to perform better, we need to write algorithms that are time-efficient and use less memory. Algorithms should be resource-optimized, solving larger problems with limited computing power, and improving user experience and system performance.</p>
 
-            <h4>Different Classes of Problems and Orders of Growth:</h4>
-            <p>Orders of growth help us understand the performance of algorithms as input size increases:</p>
-            <ul>
-                <li><strong>Constant Time (O(1)):</strong>                Performance is independent of input size.</li>
-                <li><strong>Logarithmic Time (O(log n)):</strong>         Performance grows logarithmically with input size.</li>
-                <li><strong>Linear Time (O(n)):</strong>                  Performance grows proportionally with input size.</li>
-                <li><strong>Quadratic Time (O(n^2)):</strong>             Performance grows with the square of the input size.</li>
-                <li><strong>Exponential Time (O(2^n)):</strong>           Performance doubles with each addition to the input size.</li>
-            </ul>
-        </section>
+    <h4>Different Classes of Problems and Orders of Growth:</h4>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Order of Growth</th>
+                <th>Performance Description</th>
+                <th>Example Complexity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>O(1) - Constant Time</td>
+                <td>Performance is independent of input size.</td>
+                <td>Accessing a specific element in an array</td>
+            </tr>
+            <tr>
+                <td>O(log n) - Logarithmic Time</td>
+                <td>Performance grows logarithmically with input size.</td>
+                <td>Binary search</td>
+            </tr>
+            <tr>
+                <td>O(n) - Linear Time</td>
+                <td>Performance grows proportionally with input size.</td>
+                <td>Linear search</td>
+            </tr>
+            <tr>
+                <td>O(n<sup>2</sup>) - Quadratic Time</td>
+                <td>Performance grows with the square of the input size.</td>
+                <td>Bubble sort, insertion sort</td>
+            </tr>
+            <tr>
+                <td>O(2<sup>n</sup>) - Exponential Time</td>
+                <td>Performance doubles with each addition to the input size.</td>
+                <td>Solving the Travelling Salesman Problem using brute force</td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
 
         <section>
             <h2>3. Takeaway from Different Design Principles from Chapter 2</h2>
@@ -384,7 +413,6 @@
     </table>
 </section>
 
-
         <section>
             <h4>5. The need of array query algorithms and their implications</h4>
             <p><strong>Principles of Array Query Algorithms</strong></p>
@@ -459,8 +487,9 @@
 
         <section>
     <h4>7. Deliberate on Sorting and Searching Algorithms, the Technique Behind Each, and How They Connect to the Real World</h4>
+
+    <p><strong>Sorting Algorithms</strong></p>
     
-    <h5>Sorting Algorithms</h5>
     <ul>
         <li><strong>Bubble Sort:</strong>
             <p><strong>How it works:</strong> Compares adjacent items and swaps them if they’re out of order. Repeats until the list is sorted.</p>
@@ -494,7 +523,7 @@
         </li>
     </ul>
     
-    <h5>Searching Algorithms</h5>
+    <p><strong>Searching Algorithms</strong></p>
     <ul>
         <li><strong>Linear Search:</strong>
             <p><strong>How it works:</strong> Checks each item one by one until the target is found.</p>
@@ -518,7 +547,7 @@
         </li>
     </ul>
 
-    <h5>Real-World Connections</h5>
+    <p><strong>Real World Connections</strong></p>
     <ul>
         <li><strong>Sorting:</strong> Used in organizing files, arranging products, or sorting cards.</li>
         <li><strong>Searching:</strong> Essential for finding contacts, books, or other data.</li>
@@ -531,35 +560,35 @@
        <section>
     <h4>8. Discuss the Importance of Graph Algorithms with Respect to Spanning Trees and Shortest Paths</h4>
     
-    <h5>Dijkstra's Algorithm</h5>
+    <p><strong>Dijkstra's Algorithm</strong></p>
     <ul>
         <li><strong>Purpose:</strong> Finds the shortest path from a source node to all other nodes.</li>
         <li><strong>Type:</strong> Single-source shortest path algorithm.</li>
         <li><strong>Use:</strong> Best for weighted graphs with non-negative weights.</li>
     </ul>
 
-    <h5>Floyd-Warshall Algorithm</h5>
+    <p><strong>Floyd-Warshall Algorithm</strong></p>
     <ul>
         <li><strong>Purpose:</strong> Calculates shortest paths between all pairs of nodes.</li>
         <li><strong>Type:</strong> All-pairs shortest path algorithm.</li>
         <li><strong>Use:</strong> Suitable for dense graphs.</li>
     </ul>
 
-    <h5>Prim's Algorithm</h5>
+    <p><strong>Prim's Algorithm</strong></p>
     <ul>
         <li><strong>Purpose:</strong> Finds the Minimum Spanning Tree (MST) of a graph.</li>
         <li><strong>Type:</strong> Greedy algorithm.</li>
         <li><strong>Use:</strong> Ideal for network design and minimizing total connection cost.</li>
     </ul>
 
-    <h5>Shortest Path</h5>
+    <p><strong>Shortest Path</strong></p>
     <ul>
         <li><strong>Purpose:</strong> Finds the minimum path between nodes.</li>
         <li><strong>Examples:</strong> Dijkstra’s, Bellman-Ford algorithms.</li>
         <li><strong>Use:</strong> Navigation systems and network optimization.</li>
     </ul>
 
-    <h5>Spanning Trees</h5>
+    <p><strong>Spanning Trees</strong></p>
     <ul>
         <li><strong>Purpose:</strong> Optimizes network design by connecting all nodes with minimal edges.</li>
         <li><strong>Examples:</strong> Prim’s, Kruskal’s algorithms.</li>
