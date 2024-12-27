@@ -458,20 +458,142 @@
         </section>
 
         <section>
-            <h4>7. Sorting and searching algorithms</h4>
-            <p><strong>Sorting Algorithms:</strong> Bubble Sort, Quick Sort, Merge Sort, Heap Sort.</p>
-            <p><strong>Searching Algorithms:</strong> Linear Search, Binary Search, DFS, BFS.</p>
-        </section>
+    <h4>7. Deliberate on Sorting and Searching Algorithms, the Technique Behind Each, and How They Connect to the Real World</h4>
+    
+    <h5>Sorting Algorithms</h5>
+    <ul>
+        <li><strong>Bubble Sort:</strong>
+            <p><strong>How it works:</strong> Compares adjacent items and swaps them if they’re out of order. Repeats until the list is sorted.</p>
+            <p><strong>Real-world example:</strong> Sorting a deck of cards by comparing two cards at a time and swapping them.</p>
+            <p><strong>Use:</strong> Best for small datasets, inefficient for large ones.</p>
+        </li>
+        <li><strong>Selection Sort:</strong>
+            <p><strong>How it works:</strong> Finds the smallest item, moves it to the front, and repeats for the rest of the list.</p>
+            <p><strong>Real-world example:</strong> Organizing books by picking the shortest book first.</p>
+            <p><strong>Use:</strong> Useful when minimizing swaps, but not the fastest for large datasets.</p>
+        </li>
+        <li><strong>Insertion Sort:</strong>
+            <p><strong>How it works:</strong> Builds a sorted list one item at a time by inserting each item in its correct position.</p>
+            <p><strong>Real-world example:</strong> Sorting a deck of cards by picking and placing cards in the right order.</p>
+            <p><strong>Use:</strong> Great for small or nearly sorted datasets.</p>
+        </li>
+        <li><strong>Merge Sort:</strong>
+            <p><strong>How it works:</strong> Splits the list, sorts each part, and merges them back together.</p>
+            <p><strong>Real-world example:</strong> Sorting papers by dividing them into smaller stacks, sorting, and combining them.</p>
+            <p><strong>Use:</strong> Ideal for large datasets and external sorting.</p>
+        </li>
+        <li><strong>Quick Sort:</strong>
+            <p><strong>How it works:</strong> Picks a pivot, places smaller elements on one side, larger ones on the other, and repeats.</p>
+            <p><strong>Real-world example:</strong> Dividing a group by height into smaller groups and sorting each.</p>
+            <p><strong>Use:</strong> Fast for large datasets, but pivot choice matters.</p>
+        </li>
+        <li><strong>Heap Sort:</strong>
+            <p><strong>How it works:</strong> Builds a heap and repeatedly extracts the largest or smallest element for the sorted list.</p>
+            <p><strong>Real-world example:</strong> Priority queue where highest-priority items are handled first.</p>
+            <p><strong>Use:</strong> Efficient for priority queues and structured sorting.</p>
+        </li>
+    </ul>
+    
+    <h5>Searching Algorithms</h5>
+    <ul>
+        <li><strong>Linear Search:</strong>
+            <p><strong>How it works:</strong> Checks each item one by one until the target is found.</p>
+            <p><strong>Real-world example:</strong> Searching for a name in a phone book sequentially.</p>
+            <p><strong>Use:</strong> Simple but slow for large datasets.</p>
+        </li>
+        <li><strong>Binary Search:</strong>
+            <p><strong>How it works:</strong> Works on sorted lists, checks the middle, and narrows the search range by half each time.</p>
+            <p><strong>Real-world example:</strong> Finding a word in a dictionary by dividing the search range.</p>
+            <p><strong>Use:</strong> Very efficient for sorted lists.</p>
+        </li>
+        <li><strong>Breadth-First Search (BFS):</strong>
+            <p><strong>How it works:</strong> Explores all nodes at the current level before moving to the next.</p>
+            <p><strong>Real-world example:</strong> Exploring all rooms on one floor of a building before moving to the next floor.</p>
+            <p><strong>Use:</strong> Best for finding the shortest path in unweighted graphs.</p>
+        </li>
+        <li><strong>Depth-First Search (DFS):</strong>
+            <p><strong>How it works:</strong> Goes as deep as possible along one path before backtracking and trying another.</p>
+            <p><strong>Real-world example:</strong> Exploring a maze by going deep down one path until a dead end.</p>
+            <p><strong>Use:</strong> Useful for exploring all paths or solutions in puzzles and games.</p>
+        </li>
+    </ul>
 
-        <section>
-            <h4>8. Importance of graph algorithms with respect to spanning trees and shortest paths</h4>
-            <p>Graph algorithms such as Dijkstra's and Prim’s help find optimal paths and spanning trees in networks.</p>
-        </section>
+    <h5>Real-World Connections</h5>
+    <ul>
+        <li><strong>Sorting:</strong> Used in organizing files, arranging products, or sorting cards.</li>
+        <li><strong>Searching:</strong> Essential for finding contacts, books, or other data.</li>
+        <li><strong>BFS:</strong> Helps in GPS systems to find the shortest routes and in social networks to find connections.</li>
+        <li><strong>DFS:</strong> Useful for puzzle-solving and exploring all possible moves in games.</li>
+    </ul>
+</section>
 
+
+       <section>
+    <h4>8. Discuss the Importance of Graph Algorithms with Respect to Spanning Trees and Shortest Paths</h4>
+    
+    <h5>Dijkstra's Algorithm</h5>
+    <ul>
+        <li><strong>Purpose:</strong> Finds the shortest path from a source node to all other nodes.</li>
+        <li><strong>Type:</strong> Single-source shortest path algorithm.</li>
+        <li><strong>Use:</strong> Best for weighted graphs with non-negative weights.</li>
+    </ul>
+
+    <h5>Floyd-Warshall Algorithm</h5>
+    <ul>
+        <li><strong>Purpose:</strong> Calculates shortest paths between all pairs of nodes.</li>
+        <li><strong>Type:</strong> All-pairs shortest path algorithm.</li>
+        <li><strong>Use:</strong> Suitable for dense graphs.</li>
+    </ul>
+
+    <h5>Prim's Algorithm</h5>
+    <ul>
+        <li><strong>Purpose:</strong> Finds the Minimum Spanning Tree (MST) of a graph.</li>
+        <li><strong>Type:</strong> Greedy algorithm.</li>
+        <li><strong>Use:</strong> Ideal for network design and minimizing total connection cost.</li>
+    </ul>
+
+    <h5>Shortest Path</h5>
+    <ul>
+        <li><strong>Purpose:</strong> Finds the minimum path between nodes.</li>
+        <li><strong>Examples:</strong> Dijkstra’s, Bellman-Ford algorithms.</li>
+        <li><strong>Use:</strong> Navigation systems and network optimization.</li>
+    </ul>
+
+    <h5>Spanning Trees</h5>
+    <ul>
+        <li><strong>Purpose:</strong> Optimizes network design by connecting all nodes with minimal edges.</li>
+        <li><strong>Examples:</strong> Prim’s, Kruskal’s algorithms.</li>
+        <li><strong>Use:</strong> Efficient for designing layouts like electrical grids or road networks.</li>
+    </ul>
+</section>
+            
         <section>
-            <h4>9. Discuss the different studied algorithm design techniques</h4>
-            <p>Techniques like Brute Force, Divide and Conquer, and Greedy algorithms provide strategies for solving computational problems.</p>
-        </section>
+    <h4>9. Discuss the Different Studied Algorithm Design Techniques</h4>
+    
+    <h5>Algorithm Design Techniques</h5>
+    <ul>
+        <li><strong>Brute Force:</strong> Solve problems by trying all possible solutions, guaranteed to find the correct one but inefficient for large inputs.</li>
+        <li><strong>Divide and Conquer:</strong> Break a problem into smaller subproblems, solve them recursively, and combine results (e.g., Merge Sort).</li>
+        <li><strong>Decrease and Conquer:</strong> Reduce the problem size by solving a smaller instance of the problem and building up to the solution (e.g., Insertion Sort).</li>
+        <li><strong>Transform and Conquer:</strong> Transform the problem into an easier form and solve it more efficiently (e.g., Binary Search).</li>
+        <li><strong>Greedy Algorithm:</strong> Make the locally optimal choice at each step, hoping it leads to the global optimum (e.g., Huffman Coding).</li>
+    </ul>
+
+    <h5>Algorithms</h5>
+    <ul>
+        <li><strong>Boyer-Moore Algorithm:</strong> A string searching algorithm that efficiently finds a substring within a text by skipping sections of the text.</li>
+        <li><strong>Rabin-Karp Algorithm:</strong> Uses hashing to find a substring in a string, efficient for multiple pattern searches.</li>
+        <li><strong>Dijkstra’s Algorithm:</strong> Finds the shortest path between two nodes in a weighted graph by iteratively selecting the closest node.</li>
+        <li><strong>Floyd-Warshall Algorithm:</strong> Finds the shortest paths between all pairs of nodes in a weighted graph, using dynamic programming.</li>
+        <li><strong>Kruskal’s Algorithm:</strong> Finds the Minimum Spanning Tree (MST) by sorting edges and connecting nodes with the smallest weights without forming cycles.</li>
+        <li><strong>Prim’s Algorithm:</strong> Finds the MST by growing a tree one edge at a time, always selecting the smallest edge that connects a node to the tree.</li>
+        <li><strong>Warshall’s Algorithm:</strong> Computes the transitive closure of a directed graph, determining reachability between all pairs of vertices.</li>
+    </ul>
+
+    <h5>Reflection on Algorithm Design Techniques</h5>
+    <p>There are several key algorithm design techniques, each serving different problem-solving needs. Backtracking explores all possible solutions and discards those that don’t work, useful for problems like N-Queens or Sudoku. Divide and conquer splits a problem into smaller sub-problems, solves them individually, and then combines the results, as seen in merge sort and quick sort. Brute force relies on trying every possible solution to find the correct one, used in algorithms like the Rabin-Karp algorithm for string matching. Graph algorithms like Dijkstra’s and Floyd-Warshall help find the shortest path in graphs, while Kruskal’s algorithm is used for finding the minimum spanning tree.</p>
+</section>
+
     </div>
 </body>
 </html>
