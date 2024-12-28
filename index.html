@@ -682,6 +682,58 @@
     <p>There are several key algorithm design techniques, each serving different problem-solving needs. Backtracking explores all possible solutions and discards those that don’t work, useful for problems like N-Queens or Sudoku. Divide and conquer splits a problem into smaller sub-problems, solves them individually, and then combines the results, as seen in merge sort and quick sort. Brute force relies on trying every possible solution to find the correct one, used in algorithms like the Rabin-Karp algorithm for string matching. Graph algorithms like Dijkstra’s and Floyd-Warshall help find the shortest path in graphs, while Kruskal’s algorithm is used for finding the minimum spanning tree.</p>
 </section>
 
+</section>
+<h1>Business Case Implementation</h1>
+    <h2>Business Case: Student Admission Management</h2>
+    <p>Implementation by using <strong>Hash Tables</strong>, <strong>Priority Queue</strong> (Min-heap or Max-heap), and <strong>Graphs</strong> (Dijkstra's Algorithm).</p>
+    
+    <div class="section">
+        <h3>1. Hash Table</h3>
+        <p><strong>Use Case:</strong> Efficiently store and retrieve student records.</p>
+        <p><strong>Example Implementation:</strong></p>
+        <ul>
+            <li><strong>Key:</strong> Student ID or unique application number.</li>
+            <li><strong>Value:</strong> Details like name, scores, preferences, and status.</li>
+        </ul>
+        <p><strong>Advantages:</strong></p>
+        <ul>
+            <li>Fast lookups for student data (<code>O(1)</code> on average).</li>
+            <li>Easily update records during the admission process.</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>2. Priority Queue</h3>
+        <p><strong>Use Case:</strong> Process applications based on priority (e.g., merit, reservation, or first-come-first-serve).</p>
+        <p><strong>Example Implementation:</strong></p>
+        <ul>
+            <li><strong>Priority:</strong> Merit scores or time of application.</li>
+            <li><strong>Data Structure:</strong> Min-heap or Max-heap.</li>
+        </ul>
+        <p><strong>Advantages:</strong></p>
+        <ul>
+            <li>Guarantees the highest-priority application is processed first.</li>
+            <li>Efficient insertion and extraction (<code>O(log n)</code>).</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h3>3. Graphs (Dijkstra's Algorithm)</h3>
+        <p><strong>Use Case:</strong> Seat allocation based on preferences and availability.</p>
+        <p><strong>Example Implementation:</strong></p>
+        <ul>
+            <li>Represent students and institutions as nodes.</li>
+            <li>Connect a student node to preferred institutions with edges.</li>
+            <li>Weight the edges based on preference rankings or eligibility criteria.</li>
+        </ul>
+        <p><strong>Algorithm:</strong></p>
+        <p><strong>Dijkstra's Algorithm</strong> is the most intuitive and relevant for:</p>
+        <ul>
+            <li><strong>Finding the Best Match:</strong> Quickly identifies the best institution for a student based on weighted preferences (e.g., proximity, scores).</li>
+            <li><strong>Scalability:</strong> Handles large datasets efficiently with priority queues.</li>
+        </ul>
+</section>
+
     </div>
 </body>
 </html>
