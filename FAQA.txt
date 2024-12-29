@@ -1,0 +1,224 @@
+#include <iostream>
+#include <queue>
+#include <map>
+#include <climits>
+#include <vector>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+struct Feedback {
+    string description;
+    int priority; // Higher priority means more urgent
+
+    Feedback(string desc, int prio) : description(desc), priority(prio) {}
+
+    bool operator<(const Feedback &other) const {
+        return priority < other.priority;
+    }
+};
+
+class AVLTree {
+    struct Node {
+        string department;
+        int distance;
+        Node *left, *right;
+        int height;
+
+        Node(string dept, int dist) : department(dept), distance(dist), left(nullptr), right(nullptr), height(1) {}
+    };
+
+    Node *root;
+
+    int height(Node *node) {
+        return node ? node->height : 0;
+    }
+
+    int balanceFactor(Node *node) {
+        return node ? height(node->left) - height(node->right) : 0;
+    }
+
+    Node *rotateRight(Node *y) {
+        Node *x = y->left;
+        Node *T = x->right;
+
+        x->right = y;
+        y->left = T;
+
+        y->height = max(height(y->left), height(y->right)) + 1;
+        x->height = max(height(x->left), height(x->right)) + 1;
+
+        return x;
+    }
+
+    Node *rotateLeft(Node *x) {
+        Node *y = x->right;
+        Node *T = y->left;
+
+        y->left = x;
+        x->right = T;
+
+        x->height = max(height(x->left), height(x->right)) + 1;
+        y->height = max(height(y->left), height(y->right)) + 1;
+
+        return y;
+    }
+
+    Node *insert(Node *node, string department, int distance) {
+        if (!node)
+            return new Node(department, distance);
+
+        if (distance < node->distance)
+            node->left = insert(node->left, department, distance);
+        else if (distance > node->distance)
+            node->right = insert(node->right, department, distance);
+        else
+            return node; // No duplicate distances allowed
+
+        node->height = 1 + max(height(node->left), height(node->right));
+
+        int bf = balanceFactor(node);
+
+        // Left Left Case
+        if (bf > 1 && distance < node->left->distance)
+            return rotateRight(node);
+
+        // Right Right Case
+        if (bf < -1 && distance > node->right->distance)
+            return rotateLeft(node);
+
+        // Left Right Case
+        if (bf > 1 && distance > node->left->distance) {
+            node->left = rotateLeft(node->left);
+            return rotateRight(node);
+        }
+
+        // Right Left Case
+        if (bf < -1 && distance < node->right->distance) {
+            node->right = rotateRight(node->right);
+            return rotateLeft(node);
+        }
+
+        return node;
+    }
+
+    void inOrder(Node *node, vector<pair<string, int>> &departments) {
+        if (node) {
+            inOrder(node->left, departments);
+            departments.push_back({node->department, node->distance});
+            inOrder(node->right, departments);
+        }
+    }
+
+public:
+    AVLTree() : root(nullptr) {}
+
+    void addDepartment(string department, int distance) {
+        root = insert(root, department, distance);
+    }
+
+    vector<pair<string, int>> getDepartments() {
+        vector<pair<string, int>> departments;
+        inOrder(root, departments);
+        return departments;
+    }
+};
+
+class FeedbackSystem {
+    priority_queue<Feedback> feedbackQueue;
+    AVLTree departmentTree;
+
+public:
+    void addFeedback(string description, int priority) {
+        feedbackQueue.push(Feedback(description, priority));
+    }
+
+    void addDepartment(string department, int distance) {
+        departmentTree.addDepartment(department, distance);
+    }
+
+    void processFeedback() {
+        if (feedbackQueue.empty()) {
+            cout << "No feedback to process!\n";
+            return;
+        }
+
+        Feedback topFeedback = feedbackQueue.top();
+        feedbackQueue.pop();
+
+        cout << "Processing Feedback: " << topFeedback.description << " (Priority: " << topFeedback.priority << ")\n";
+
+        vector<pair<string, int>> departments = departmentTree.getDepartments();
+        if (departments.empty()) {
+            cout << "No departments available to handle feedback.\n";
+            return;
+        }
+
+        cout << "Available Departments (sorted by proximity):\n";
+        for (auto &dept : departments)
+            cout << dept.first << " (Distance: " << dept.second << ")\n";
+
+        cout << "Assigning feedback to: " << departments[0].first << "\n";
+    }
+
+    void displayAllFeedback() {
+        if (feedbackQueue.empty()) {
+            cout << "No feedback available!\n";
+            return;
+        }
+
+        priority_queue<Feedback> tempQueue = feedbackQueue;
+        cout << "All Feedbacks: \n";
+        while (!tempQueue.empty()) {
+            Feedback f = tempQueue.top();
+            tempQueue.pop();
+            cout << f.description << " (Priority: " << f.priority << ")\n";
+        }
+    }
+};
+
+int main() {
+    FeedbackSystem system;
+
+    system.addDepartment("IT Support", 5);
+    system.addDepartment("Academic Affairs", 2);
+    system.addDepartment("Student Services", 8);
+    system.addDepartment("Library", 4);
+
+    int choice;
+    do {
+        cout << "\n1. Submit Feedback\n";
+        cout << "2. Process Feedback\n";
+        cout << "3. Display All Feedbacks\n";
+        cout << "4. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+            case 1: {
+                string description;
+                int priority;
+                cout << "Enter feedback description: ";
+                cin.ignore();
+                getline(cin, description);
+                cout << "Enter feedback priority (1-10): ";
+                cin >> priority;
+                system.addFeedback(description, priority);
+                break;
+            }
+            case 2:
+                system.processFeedback();
+                break;
+            case 3:
+                system.displayAllFeedback();
+                break;
+            case 4:
+                cout << "Exiting...\n";
+                break;
+            default:
+                cout << "Invalid choice!\n";
+        }
+    } while (choice != 4);
+
+    return 0;
+}
