@@ -741,121 +741,12 @@
     <li><strong>SDG 11 - Sustainable Cities and Communities:</strong> <p>Parking Management and efficient student admissions contribute to the sustainable management of urban infrastructure.<p></li>
 </ul>
     <a href="Know More About SDGs.html" target="_blank">Know More</a>
-
-        </section>
-
-</section>
-<h1>Business Cases Implementation</h1>
-    <h2>Business Case: Student Admission Management</h2>
-        <p>The Student Admission Management system aligns with the following Sustainable Development Goals (SDGs):</p>
-        <ul>
-            <li>
-                <h2>SDG 4: Quality Education</h2>
-                <p>Ensures inclusive and equitable quality education and promotes lifelong learning opportunities for all through a streamlined and accessible admission process.</p>
-            </li>
-            <li>
-                <h2>SDG 10: Reduced Inequalities</h2>
-                <p>Promotes fairness and transparency in the admission process, reducing biases and ensuring equal opportunities for students from diverse backgrounds.</p>
-            </li>
-        </ul>
-    <p>Implementation by using <strong>Hash Tables</strong>, <strong>Priority Queue</strong> (Min-heap or Max-heap), and <strong>Graphs</strong> (Dijkstra's Algorithm).</p>
-    
-<div class="section">
-        <h3>1. Graphs (Dijkstra's Algorithm)</h3>
-        <p><strong>Use Case:</strong> Seat allocation based on preferences and availability.</p>
-        <p><strong>Example Implementation:</strong></p>
-        <ul>
-            <li>Represent students and institutions as nodes.</li>
-            <li>Connect a student node to preferred institutions with edges.</li>
-            <li>Weight the edges based on preference rankings or eligibility criteria.</li>
-        </ul>
-        <p><strong>Algorithm:</strong></p>
-        <p><strong>Dijkstra's Algorithm</strong> is the most intuitive and relevant for:</p>
-        <ul>
-            <li><strong>Finding the Best Match:</strong> Quickly identifies the best institution for a student based on weighted preferences (e.g., proximity, scores).</li>
-            <li><strong>Scalability:</strong> Handles large datasets efficiently with priority queues.</li>
-        </ul>
-       <a href="SAM_availability.txt" target="_blank">click here</a>
-     </div>
-    
-    <div class="section">
-        <h3>2. Priority Queue</h3>
-        <p><strong>Use Case:</strong> Process applications based on priority (e.g., merit, reservation, or first-come-first-serve).</p>
-        <p><strong>Example Implementation:</strong></p>
-        <ul>
-            <li><strong>Priority:</strong> Merit scores or time of application.</li>
-            <li><strong>Data Structure:</strong> Min-heap or Max-heap.</li>
-        </ul>
-        <p><strong>Advantages:</strong></p>
-        <ul>
-            <li>Guarantees the highest-priority application is processed first.</li>
-            <li>Efficient insertion and extraction (<code>O(log n)</code>).</li>
-        </ul>
-        <a href="SAM_priority.txt" target="_blank">click here</a>
-    </div>
-
-    <div class="section">
-        <h3>3. Hash Table</h3>
-        <p><strong>Use Case:</strong> Efficiently store and retrieve student records.</p>
-        <p><strong>Example Implementation:</strong></p>
-        <ul>
-            <li><strong>Key:</strong> Student ID or unique application number.</li>
-            <li><strong>Value:</strong> Details like name, scores, preferences, and status.</li>
-        </ul>
-        <p><strong>Advantages:</strong></p>
-        <ul>
-            <li>Fast lookups for student data (<code>O(1)</code> on average).</li>
-            <li>Easily update records during the admission process.</li>
-        </ul>
-        <a href="SAM_Retive.txt" target="_blank">click here</a>
-    </div>
-
-</section>
-
-
+ </section>
+        
 <header>
-    <h1>Business Case: Feedback and Quality Assurance</h1>
-</header>
-
-<section>
-    <h2>Feedback and Quality Assurance for SDG 4: Quality Education</h2>
-    <h2>1. Hash Tables</h2>
-    <p>A Hash Map can be used to store and efficiently retrieve feedback data, associating unique identifiers (e.g., student IDs, employee IDs, or customer IDs) with their feedback or performance data. This allows for fast updates and retrieval of feedback for specific individuals.</p>
+<a href="FAQA.txt" target="_blank">click here</a>
+<header>
     
-    <div class="card">
-        <h3>Use Cases:</h3>
-        <ul>
-            <li><strong>Feedback Collection and Storage:</strong> Use a hash map to store feedback scores indexed by unique IDs, such as student or employee IDs. This enables quick updates and retrievals.</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2>2. AVL Trees</h2>
-    <p>AVL Trees are self-balancing binary search trees that provide fast insertion, deletion, and lookup operations while maintaining a balanced structure. This is useful for maintaining sorted feedback scores, quality metrics, or performance evaluations.</p>
-    
-    <div class="card">
-        <h3>Use Cases:</h3>
-        <ul>
-            <li><strong>Feedback Sorted by Scores:</strong> Store feedback scores sorted by score to quickly identify top performers and evaluate quality trends.</li>
-        </ul>
-    </div>
-</section>
-
-<section>
-    <h2>3. Priority Queue</h2>
-    <p>A Priority Queue is a data structure where elements are assigned priorities. It can be useful in feedback processing, such as handling higher priority feedback first (e.g., negative feedback).</p>
-    
-    <div class="card">
-        <h3>Use Cases:</h3>
-        <ul>
-            <li><strong>Processing Feedback by Priority:</strong> Use a priority queue to process feedback based on priority, such as urgency or rating score.</li>
-        </ul>
-    </div>
-     <a href="FAQA.txt" target="_blank">click here</a>
-</section>
-    </div>
-
  <header>
     <h1>THANK YOU!!</h1>
 </header>
