@@ -760,21 +760,22 @@
         </ul>
     <p>Implementation by using <strong>Hash Tables</strong>, <strong>Priority Queue</strong> (Min-heap or Max-heap), and <strong>Graphs</strong> (Dijkstra's Algorithm).</p>
     
-    <div class="section">
-        <h3>1. Hash Table</h3>
-        <p><strong>Use Case:</strong> Efficiently store and retrieve student records.</p>
+<div class="section">
+        <h3>1. Graphs (Dijkstra's Algorithm)</h3>
+        <p><strong>Use Case:</strong> Seat allocation based on preferences and availability.</p>
         <p><strong>Example Implementation:</strong></p>
         <ul>
-            <li><strong>Key:</strong> Student ID or unique application number.</li>
-            <li><strong>Value:</strong> Details like name, scores, preferences, and status.</li>
+            <li>Represent students and institutions as nodes.</li>
+            <li>Connect a student node to preferred institutions with edges.</li>
+            <li>Weight the edges based on preference rankings or eligibility criteria.</li>
         </ul>
-        <p><strong>Advantages:</strong></p>
+        <p><strong>Algorithm:</strong></p>
+        <p><strong>Dijkstra's Algorithm</strong> is the most intuitive and relevant for:</p>
         <ul>
-            <li>Fast lookups for student data (<code>O(1)</code> on average).</li>
-            <li>Easily update records during the admission process.</li>
+            <li><strong>Finding the Best Match:</strong> Quickly identifies the best institution for a student based on weighted preferences (e.g., proximity, scores).</li>
+            <li><strong>Scalability:</strong> Handles large datasets efficiently with priority queues.</li>
         </ul>
-    </div>
-
+    
     <div class="section">
         <h3>2. Priority Queue</h3>
         <p><strong>Use Case:</strong> Process applications based on priority (e.g., merit, reservation, or first-come-first-serve).</p>
@@ -791,20 +792,20 @@
     </div>
 
     <div class="section">
-        <h3>3. Graphs (Dijkstra's Algorithm)</h3>
-        <p><strong>Use Case:</strong> Seat allocation based on preferences and availability.</p>
+        <h3>3. Hash Table</h3>
+        <p><strong>Use Case:</strong> Efficiently store and retrieve student records.</p>
         <p><strong>Example Implementation:</strong></p>
         <ul>
-            <li>Represent students and institutions as nodes.</li>
-            <li>Connect a student node to preferred institutions with edges.</li>
-            <li>Weight the edges based on preference rankings or eligibility criteria.</li>
+            <li><strong>Key:</strong> Student ID or unique application number.</li>
+            <li><strong>Value:</strong> Details like name, scores, preferences, and status.</li>
         </ul>
-        <p><strong>Algorithm:</strong></p>
-        <p><strong>Dijkstra's Algorithm</strong> is the most intuitive and relevant for:</p>
+        <p><strong>Advantages:</strong></p>
         <ul>
-            <li><strong>Finding the Best Match:</strong> Quickly identifies the best institution for a student based on weighted preferences (e.g., proximity, scores).</li>
-            <li><strong>Scalability:</strong> Handles large datasets efficiently with priority queues.</li>
+            <li>Fast lookups for student data (<code>O(1)</code> on average).</li>
+            <li>Easily update records during the admission process.</li>
         </ul>
+    </div>
+
 </section>
 
     </div>
