@@ -1,0 +1,108 @@
+#include <iostream>
+#include <vector>
+#include <list>
+#include <string>
+#include <functional>
+
+using namespace std;
+
+struct Student {
+    string name;
+    int scores;
+    string preferences;
+    string status;
+
+    Student(string n, int s, string p, string st)
+        : name(n), scores(s), preferences(p), status(st) {}
+};
+
+class HashTable {
+private:
+    vector<list<pair<int, Student>>> table;
+    int capacity;
+
+    int hashFunction(int key) {
+        return key % capacity;
+    }
+
+public:
+    HashTable(int size) : capacity(size) {
+        table.resize(size);
+    }
+
+    void insert(int key, Student student) {
+        int index = hashFunction(key);
+        table[index].push_back({key, student});
+    }
+
+    bool retrieve(int key) {
+        int index = hashFunction(key);
+        for (const auto &entry : table[index]) {
+            if (entry.first == key) {
+                const Student &student = entry.second;
+                cout << "Student ID: " << key
+                     << ", Name: " << student.name
+                     << ", Scores: " << student.scores
+                     << ", Preferences: " << student.preferences
+                     << ", Status: " << student.status << endl;
+                return true;
+            }
+        }
+        cout << "Student record not found for ID: " << key << endl;
+        return false;
+    }
+};
+
+int main() {
+
+    HashTable hashTable(10);
+
+    int choice;
+    do {
+        cout << "\nMenu:\n";
+        cout << "1. Insert student record\n";
+        cout << "2. Retrieve student record\n";
+        cout << "3. Exit\n";
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        switch (choice) {
+        case 1: {
+
+            int id;
+            string name, preferences, status;
+            int scores;
+            cout << "Enter Student ID: ";
+            cin >> id;
+            cin.ignore(); 
+            cout << "Enter Name: ";
+            getline(cin, name);
+            cout << "Enter Scores: ";
+            cin >> scores;
+            cin.ignore(); 
+            cout << "Enter Preferences: ";
+            getline(cin, preferences);
+            cout << "Enter Status: ";
+            getline(cin, status);
+
+            hashTable.insert(id, Student(name, scores, preferences, status));
+            cout << "Record added successfully.\n";
+            break;
+        }
+        case 2: {
+            int id;
+            cout << "Enter Student ID to retrieve: ";
+            cin >> id;
+            hashTable.retrieve(id);
+            break;
+        }
+        case 3:
+            cout << "Exiting program. Goodbye!\n";
+            break;
+        default:
+            cout << "Invalid choice! Please try again.\n";
+        }
+    } while (choice != 3);
+
+    return 0;
+}
