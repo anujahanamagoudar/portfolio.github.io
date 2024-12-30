@@ -3,53 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Cases and SDGs</title>
-<link rel="stylesheet" href="https://raw.githubusercontent.com/username/repository/main/css/style.css">
-
-
+    <title>Smart City Design</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-        }
-        table, th, td {
-            border: 1px solid #000;
-        }
-        th, td {
-            padding: 10px;
-            text-align: left;
-        }
-        h1, h2, h3 {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #dfffd6; /* Light green background */
             color: #333;
         }
-        ul {
-            margin: 10px 0;
-            padding-left: 20px;
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #27ae60; /* Green background */
+            padding: 10px 20px;
+            text-align: center;
         }
-        a {
-            color: #007BFF;
+        nav a {
+            color: white;
+            font-size: 18px;
+            margin: 0 15px;
             text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        .section {
-            margin-bottom: 20px;
-            padding: 10px;
-            border: 1px solid #ccc;
+            padding: 10px 20px;
             border-radius: 5px;
+            transition: background-color 0.3s;
         }
-        .card {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 10px 0;
+        nav a:hover {
+            background-color: #2ecc71; /* Lighter green on hover */
+        }
+
+        /* Personal Information Section */
+        .personal-info {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .personal-info h1 {
+            color: #27ae60;
+            font-size: 28px;
+            margin: 0;
+        }
+        .personal-info p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .personal-info a {
+            color: #27ae60;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Center Bar and Content Section Styles */
+        .center-bar {
+            background-color: #fff; /* White bar */
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 80%;
+            border-radius: 10px;
+        }
+        .center-bar h1 {
+            font-size: 28px;
+            color: #27ae60;
+            margin: 0;
+        }
+        .center-bar h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin: 5px 0 0;
+        }
+        .content {
+            padding: 20px;
+        }
+        .content-section {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .content-section h1 {
+            font-size: 28px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .content-section h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin-top: 0;
+        }
+        .content-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .content-box {
+            flex: 1 1 45%;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        .content-box h2 {
+            font-size: 22px;
+            color: #27ae60;
+            margin-bottom: 10px;
+        }
+        .content-box p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.6;
         }
     </style>
 </head>
