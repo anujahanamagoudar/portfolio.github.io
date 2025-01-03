@@ -216,37 +216,34 @@
     
     <div class="section">
         <h3>1. Priority Queue</h3>
-        <p><strong>Use Case:</strong> Process applications based on priority (e.g., merit, reservation, or first-come-first-serve).</p>
+        <p><strong>Use Case:</strong> Streamline the application process by processing applications based on merit score and document verification.</p>
         <p><strong>Example Implementation:</strong></p>
         <ul>
-            <li><strong>Priority:</strong> Merit scores or time of application.</li>
-            <li><strong>Data Structure:</strong> Min-heap or Max-heap.</li>
+            <li><strong>Priority:</strong> Higher merit scores are prioritized for processing, and applications with verified documents are eligible for seat allocation.</li>
+            <li><strong>Data Structure:</strong> Max-heap implemented using <code>priority_queue</code>.</li>
         </ul>
         <p><strong>Advantages:</strong></p>
         <ul>
-            <li>Guarantees the highest-priority application is processed first.</li>
-            <li>Efficient insertion and extraction (<code>O(log n)</code>).</li>
+            <li>Ensures fairness by processing high-priority applications first.</li>
+            <li>Efficient handling of insertion and extraction operations (<code>O(log n)</code> complexity).</li>
         </ul>
-        <a href="SAM_priority.txt" target="_blank">click here</a>
     </div>
 
     <div class="section">
         <h3>2. Hash Table</h3>
-        <p><strong>Use Case:</strong> Efficiently store and retrieve student records.</p>
+        <p><strong>Use Case:</strong> Efficiently store, retrieve, and update student application records during the admission process.</p>
         <p><strong>Example Implementation:</strong></p>
         <ul>
-            <li><strong>Key:</strong> Student ID or unique application number.</li>
-            <li><strong>Value:</strong> Details like name, scores, preferences, and status.</li>
+            <li><strong>Key:</strong> Unique Student ID.</li>
+            <li><strong>Value:</strong> Details such as name, merit score, preferences, document status, and seat allocation status.</li>
         </ul>
         <p><strong>Advantages:</strong></p>
         <ul>
-            <li>Fast lookups for student data (<code>O(1)</code> on average).</li>
-            <li>Easily update records during the admission process.</li>
+            <li>Quickly access and manage student data (<code>O(1)</code> average complexity for lookups).</li>
+            <li>Facilitates seamless updates to records during document verification and seat allocation stages.</li>
         </ul>
-        <a href="SAM_Retive.txt" target="_blank">click here</a>
     </div>
 
-</section>
 
 </body>
 </html>
